@@ -1,0 +1,16 @@
+Thread 2 executing
+Thread 4 executing
+Thread 1 executing
+Thread 3 executing
+Thread 2 executing
+Thread 4 executing
+Thread 1 executing
+Thread 3 executing
+Thread 2 executing
+Thread 4 executing
+Thread 3 executing
+Thread 1 executing
+Final value of n is 0
+Final value of pass_by_ref is 5
+Final value of f.n (foo::n) is 5
+Final value of fnctor.n (Functor::n) is 0
