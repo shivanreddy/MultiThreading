@@ -74,7 +74,16 @@ int main()
     t2.join();
     t4.join();
     t5.join();
-    t6.join();
+
+	//t6.join();
+	t6.detach(); // Detaching t6, it will continue to run independently
+
+	if(t6.joinable()) {
+		t6.join(); // This will not execute as t6 is detached
+	} else {
+		std::cout << "t6 is not joinable, it has been detached.\n";
+	}
+
     std::cout << "Final value of n is " << n << '\n';
     std::cout << "Final value of pass_by_ref is " << pass_by_ref << '\n';
     std::cout << "Final value of f.n (foo::n) is " << f.n << '\n';
